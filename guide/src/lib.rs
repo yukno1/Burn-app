@@ -39,7 +39,7 @@ pub fn guide() {
     type MyAutoDiffBackend = Autodiff<MyBackend>;
 
     let device = burn::backend::wgpu::WgpuDevice::default();
-    let artifact_dir = "/tmp/guide";
+    let artifact_dir = ".\\tmp\\guide";
 
     crate::training::train::<MyAutoDiffBackend>(
         artifact_dir,
